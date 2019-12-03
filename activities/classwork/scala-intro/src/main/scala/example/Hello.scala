@@ -2,7 +2,16 @@ package example
 
 object Hello {
   val default = "World"
+  // Greeting function
+  def greeting(name: String = default): String = {
+    s"Hello, $name!"
+  }
 
-  def greeting(name: String = default): String = "Hello"
+  // Main method
+  // run with: sbt "runMain example.Hello World"
+  def main(args: Array[String]): Unit ={
+    val name = args.head
+    println(greeting(name))
+  }
 
 }
