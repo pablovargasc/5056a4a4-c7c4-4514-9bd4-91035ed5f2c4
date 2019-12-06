@@ -1,6 +1,6 @@
 -- Create student table
 CREATE TABLE IF NOT EXISTS student (
-    id UUID,
+    id UUID, #tipo de ID aleatorio
     first_name TEXT,
     last_name TEXT,
     gender TEXT,
